@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+	<header class="header">
+        <a href="#" class="header__logo"><img src="img/logo.png" alt="logo"></a>
+        <input class="menu-btn" type="checkbox" />
+        <label class="menu-icon" onclick="openNav()"></label>
+        <ul class="menu">
+            <li><a href="#home" class="header__active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+
+        </ul>
+    </header>
+
+
+    <div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="#home" onclick="closeNav()">Home</a>
+            <a href="#services" onclick="closeNav()">Services</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#work" onclick="closeNav()">Work</a>
+            <a href="#contacts" onclick="closeNav()">Contacts</a>
+	    </div>
+	</div>
+	<script src="app.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* header */
+
+.header {
+    width: 70%;
+    margin-left: 15%;
+    z-index: 7;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    font-size: 18px;
+    font-family: Lato;
+    overflow: hidden;
+    background-color: red;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header li a {
+    display: block;
+    text-decoration: none;
+    color: yellow;
+    padding: 18px 21px 18px 33px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #74c7d5;
+}
+
+.header .header__logo {
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding-right: 0;
+    padding-top: 36px;
+    margin-left: 8px;
+    
+}
+
+.header .header__logo img{
+    width: 151px;   
+}
+
+.header__logo:hover{
+    opacity: 0.9;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+}
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 5px 8px;
+    position: relative;
+    user-select: none;
+    top: 35px;
+    content: url("img/menu-icon.png");
+}
+
+
+.header .menu-btn {
+    display: none;
+}
+
+
+@media (min-width: 800px) {
+    .header__active{
+        background-color: #22c8d7;
+        border-radius: 0 0 4px 4px;
+    }
+
+    .header li a:hover {
+        background-color: #22c8d7;
+        border-radius: 0 0 4px 4px;
+    }
+    
+    .header .menu-btn:checked ~ .menu {
+        background-color: transparent;
+    }
+
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 38px 10px 8px 10px;
+        
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+       display: none;
+    }
+}
+
+@media (min-width: 1005px){
+    .header li a {
+        padding: 38px 26px 13px 26px;
+    }
+
+}
+
+/*OVERLAY*/
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: Lato;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
