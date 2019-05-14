@@ -8,7 +8,6 @@
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     font-size: 18px;
-    font-family: Lato;
     overflow: hidden;
     background-color: #f16848;
     padding-bottom: 20px;
@@ -74,6 +73,8 @@
 
 
 @media (min-width: 800px) {
+    
+    
     .header__active{
         background-color: #f59678;
         border-radius: 0 0 4px 4px;
@@ -143,7 +144,6 @@
     color: #818181;
     display: block;
     transition: 0.3s;
-    font-family: Lato;
 }
 
 .overlay a:hover, .overlay a:focus {
