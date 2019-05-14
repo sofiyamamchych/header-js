@@ -10,7 +10,8 @@
     font-size: 18px;
     font-family: Lato;
     overflow: hidden;
-    background-color: red;
+    background-color: #f16848;
+    padding-bottom: 20px;
 }
 
 .header ul {
@@ -23,7 +24,7 @@
 .header li a {
     display: block;
     text-decoration: none;
-    color: yellow;
+    color: white;
     padding: 18px 21px 18px 33px;
 }
 
@@ -47,7 +48,7 @@
 }
 
 .header__logo:hover{
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .header .menu {
@@ -59,10 +60,10 @@
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 5px 8px;
+    padding: 5px 20px;
     position: relative;
     user-select: none;
-    top: 35px;
+    top: 38px;
     content: url("img/menu-icon.png");
 }
 
@@ -74,12 +75,12 @@
 
 @media (min-width: 800px) {
     .header__active{
-        background-color: #22c8d7;
+        background-color: #f59678;
         border-radius: 0 0 4px 4px;
     }
 
     .header li a:hover {
-        background-color: #22c8d7;
+        background-color: #f6c7b3;
         border-radius: 0 0 4px 4px;
     }
     
